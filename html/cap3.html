@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capitulo 2</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/cap1.css">
+</head>
+
+<body>
+    <section class="container welcome d-flex align-items-center vh-100">
+        <div id="carouselExample" class="carousel slide w-100">
+            <div class="carousel-inner">
+                <!-- escena 8 -->
+                <div class="carousel-item active escena5">
+                    <img src="../recursos/escena5/mercado.png" class="d-block  w-100" alt="...">
+                    <img src="../recursos/escena5/letrero.png" class="d-block escenas-imgs w-100" alt="...">
+                    <img id="contornoEscena8" src="../recursos/escena5/puesto-contorno-verde.png" class="d-block escenas-imgs w-100 d-none" alt="...">
+                    <div id="divContornoEscena8"></div>
+
+                    <img id="familiaQuietosEscena8" src="../recursos/escena8/familia-quietos-img.png" class="d-block escenas-imgs w-100 d-none" alt="...">
+                    <img id="narracionEscena8" src="../recursos/escena8/narracion.gif" class="d-block w-100 escenas-imgs d-none" alt="...">
+                    <img id="arrow1Escena8" src="../img/flecha-amarilla.png" alt="">
+                    <img id="arrow2Escena8" src="../img/flecha-amarilla.png" class="d-none" alt="">
+                    <audio id="audioEscena8">
+                        <source src="../recursos/escena8/audioEscena8.mp3" type="audio/mp3">
+                        Tu navegador no soporta el tag de audio.
+                    </audio>    
+                </div>
+                
+                <!-- escena 9 -->
+                <div class="carousel-item escena6">
+                    <video autoplay loop muted onended="reproducirInfinitamente()" class="d-block w-100 pasaTiempo">
+                        <source src="../recursos/pasa tiempo/video pasa tiempo.mp4" type="video/mp4">
+                        Tu navegador no soporta la etiqueta de video.
+                    </video>
+                    <img id="contorno-escena9" src="../recursos/escena1/contorno-verde.png" class="d-block w-100 escenas-imgs d-none" alt="">
+                    <div id="div-contorno-escena9"></div>
+                    <img id="narracionEscena9" src="../recursos/escena9/narracion.gif" class="d-block w-100 escenas-imgs d-none" alt="">
+                    <img id="imgNarracionEscena9" src="../recursos/escena9/imgNarracion.png" class="d-block w-100 escenas-imgs d-none" alt="">
+                    <img id="arrow1Escena9" src="../img/flecha-amarilla.png" alt="">
+                    <img id="arrow2Escena9" src="../img/flecha-amarilla.png" class="d-none" alt="">
+                    <audio id="audioEscena9">
+                        <source src="../recursos/escena9/audioEscena9.mp3" type="audio/mp3">
+                        Tu navegador no soporta el tag de audio.
+                    </audio>
+                </div>
+
+                <!-- Volver a la pagina principal -->
+                <div class="carousel-item">
+                    <div class="cap2 text-center">
+                        <a href="" class="img-cap" id="altura-img-cap"><img src="..//img/capitulo3.png" alt="" class=" img-cap2"></a>
+                        <a href="" class="btn-cap">Ir a la pagina principal</a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <div id="controladores-comic" class="controladores-comic">
+            <div class="controladores-btns h-100 d-flex flex-column justify-content-around">
+                <a href="../index.html" class="d-flex "><img class="img-btns m-auto" src="../img/img-menu.png" alt=""></a>
+                <div class="music-container">
+                    <audio id="music" src="../recursos/music.mp3" preload="auto" loop=""></audio>
+                    <img id="playMusicBtn" class="img-btns d-flex m-auto" src="../img/img-sonido.png"
+                        alt="Reproducir/Pausar">
+                    <input type="range" id="musicSlider" min="0" max="1" step="0.1" value="0.1">
+                </div>
+                <div class="voices-container">
+                    <img id="playVoicesBtn" class="img-btns d-flex m-auto" src="../img/img-dialogos.png" alt="">
+                    <input type="range" id="voicesSlider" min="0" max="1" step="0.1" value="1">
+                </div>
+
+                <div>
+                    <!-- Button trigger modal -->
+                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <img src="../img/img-info.png" class="img-btns m-auto" alt="">
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="modalContainer">
+                                    <h1 class="text-center titulo">BIENVENIDO AL COMIC INTERACTIVO <br>EL SABOR DE LA
+                                        SALUD
+                                    </h1>
+                                    <br>
+                                    <p class="">¡Bienvenidos a esta emocionante historia en formato de cómic! Acompaña a
+                                        la
+                                        familia Rodríguez en su viaje de descubrimiento y transformación mientras
+                                        luchan por una vida más saludable.</p>
+                                    <br> <br>
+                                    <h3 class="text-center">Instrucciones</h3> <br>
+                                    <p>Para interactuar con el contenido haz click donde indican las flechas a medida
+                                        que
+                                        salgan.</p>
+                                    <p>Solo dar un click, evitar dar doble click</p>
+                                    <p>No pasar a la siguiente escena antes de que la animación se lo indique.</p>
+                                    <p>Para volver a ver cada una de las escenas recargar la página y avanzar hasta la
+                                        escena correspondiente.</p> <br> <br>
+                                    <h3 class="text-center">Al iniciar el comic te encontrarás con un menu en la parte
+                                        derecha.</h3> <br>
+                                    <p><img class="introduccion-iconos" src="../img/img-menu.png" alt="">Con este botón
+                                        podras volver al menu de
+                                        capítulos.</p>
+                                    <p><img class="introduccion-iconos" src="../img/img-sonido.png" alt="">Al oprimir
+                                        este
+                                        boton podrás pausar o reproducir la musica de ambiente, debajo del mismo
+                                        encuentras
+                                        un
+                                        controlador de sonido. </p>
+                                    <p><img class="introduccion-iconos" src="../img/img-dialogos.png" alt="">Al oprimir
+                                        este
+                                        boton podrás activar o desactivar el sonido de la narración y los dialogos,
+                                        debajo
+                                        del mismo
+                                        encuentras un controlador de sonido.
+                                    </p>
+                                    <p><img class="introduccion-iconos" src="../img/img-info.png" alt="">Con este botón
+                                        podrás volver a ver las instrucciones en cualquier momento.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+<script src="../js/cap3.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+
+</html>

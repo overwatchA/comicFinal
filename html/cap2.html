@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capitulo 2</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/cap1.css">
+</head>
+
+<body>
+    <section class="container welcome d-flex align-items-center vh-100">
+        <div id="carouselExample" class="carousel slide w-100">
+            <div class="carousel-inner">
+                <!-- escena 5 -->
+                <div class="carousel-item active escena5">
+                    <img src="../recursos/escena5/mercado.png" class="d-block  w-100" alt="...">
+                    <img src="../recursos/escena5/letrero.png" class="d-block escenas-imgs w-100" alt="...">
+                    <img id="contornoLetrero" src="../recursos/escena5/letrero-contorno-verde.png" class="d-block escenas-imgs w-100 d-none" alt="...">
+                    <img id="contornoEscena5" src="../recursos/escena5/puesto-contorno-verde.png" class="d-block escenas-imgs w-100 d-none" alt="...">
+                    <div id="divContornoEscena5"></div>
+                    
+                    <img id="familiaQuietosEscena5" src="../recursos/escena5/posiciones-estáticas-mercados.png" class="d-block escenas-imgs w-100 d-none" alt="...">
+                    <img id="narracionEscena5" src="../recursos/escena5/narracion.gif" class="d-block w-100 escenas-imgs d-none" alt="...">
+                    <img id="imgNarracionEscena5" src="../recursos/escena5/imgNarracion.png" class="d-block w-100 escenas-imgs d-none" alt="...">
+                    <img id="arrow1Escena5" src="../img/flecha-amarilla.png" alt="">
+                    <img id="arrow2Escena5" src="../img/flecha-amarilla.png" class="d-none" alt="">
+                    <audio id="audioEscena5">
+                        <source src="../recursos/escena5/audioEscena5.mp3" type="audio/mp3">
+                        Tu navegador no soporta el tag de audio.
+                    </audio>    
+
+                    <div>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal-2">
+                            <div id="divContornoLetrero"></div>
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal-2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="modalContainer">
+                                            <h1 class="text-center titulo">Explora los Mercados Campesinos<br></h1><br>
+                                            <p class="">¡Hola! Parece que estás interesado en conocer más sobre los mercados campesinos y cómo pueden beneficiarte a ti y a tu comunidad. Aquí tienes información valiosa para entender por qué son una excelente opción:</p>
+                                            <br>
+                                            <h5 class="text-subtitle">¿Qué son los Mercados Campesinos?</h5>
+                                            <p>Los mercados campesinos son lugares donde los agricultores locales y artesanos venden directamente sus productos frescos y hechos a mano. Estos mercados te brindan la oportunidad de comprar alimentos y productos de calidad directamente de quienes los cultivan y elaboran.
+                                            </p> <br>
+                                            
+                                            <h5 class="text-subtitle">¿Qué puedes encontrar en los Mercados Campesinos?</h5>
+                                            <p class="parradoIndentado"></p>> <span class="text-subSubtitle">Alimentos Frescos:</span> Frutas, verduras, carnes, huevos, lácteos y pan fresco. Estos alimentos son más cercanos a la naturaleza y suelen ser más saludables y sabrosos que los productos procesados.
+                                            </p>
+                                            <p class="parradoIndentado"></p>><span class="text-subSubtitle">Productos Artesanales:</span> Ropa, artesanías, productos de cuidado personal y más. Muchos de estos artículos son únicos y hechos a mano con amor y cuidado.
+                                            </p><br>
+
+                                            <h5 class="text-subtitle">¿Por qué son Buenos los Productos de los Mercados Campesinos?</h5>
+                                            <p class="parradoIndentado"></p>><span class="text-subSubtitle">Productos Más Frescos y Saludables:</span>  Los productos de los mercados campesinos suelen estar menos procesados y contienen menos aditivos, lo que puede tener un impacto positivo en tu salud.
+                                            </p>
+                                            <p class="parradoIndentado"></p>><span class="text-subSubtitle">Apoyo Local:</span> Comprando en los mercados campesinos, estás apoyando a los agricultores y productores locales, lo que fortalece la economía de tu comunidad.
+                                            </p>
+                                            <p class="parradoIndentado"></p>><span class="text-subSubtitle">Menor Huella Ambiental:</span> Al comprar productos locales, se reducen los largos viajes de transporte, lo que disminuye la contaminación y el uso de energía.
+                                            </p>
+                                            <p class="parradoIndentado"></p>><span class="text-subSubtitle">Empoderar a los Agricultores Locales:</span> Los ingresos obtenidos de tus compras directas permiten a los agricultores y productores locales mantener sus negocios y sus familias.
+                                            </p>
+                                            <p class="parradoIndentado"></p>><span class="text-subSubtitle">Generar Empleo:</span> Los mercados campesinos crean empleo en la comunidad, desde agricultores hasta artesanos y vendedores.
+                                            </p>
+                                            <p class="parradoIndentado"></p>><span class="text-subSubtitle">Fomentar la Diversidad Alimentaria:</span> Los mercados campesinos promueven el cultivo de variedades locales de alimentos, lo que ayuda a preservar la biodiversidad y las tradiciones culinarias.
+                                            </p><br>
+
+                                            <h5 class="text-subtitle">El consumir productos ultraprocesados de supermercados importados puede tener efectos negativos</h5>
+                                            <p class="parradoIndentado"></p>><span class="text-subSubtitle">Déficit Comercial:</span> La alta demanda de productos ultraprocesados, que la producción nacional no puede satisfacer completamente, lleva a la importación de estos productos. Esto contribuye al aumento del déficit comercial, lo que puede tener efectos en la estabilidad económica del país.
+                                            </p>
+                                            <p class="parradoIndentado"></p>><span class="text-subSubtitle">Dependencia Externa:</span> Al depender en gran medida de productos importados, la economía del país puede volverse más vulnerable a fluctuaciones en los mercados internacionales y cambios en la moneda extranjera.
+                                            </p><hr><br>
+
+                                            <h5 class="text-subtitle">Conclusión</h5>
+                                            <p>Explorar los mercados campesinos no solo es una experiencia enriquecedora para ti, sino que también tiene un impacto positivo en la economía local y nacional. ¡Disfruta de la diversidad de productos y contribuye al bienestar de tu país al tomar decisiones conscientes y saludables!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- escena 6 -->
+                <div class="carousel-item escena6">
+                    <video autoplay loop muted onended="reproducirInfinitamente()" class="d-block w-100 pasaTiempo">
+                        <source src="../recursos/pasa tiempo/video pasa tiempo.mp4" type="video/mp4">
+                        Tu navegador no soporta la etiqueta de video.
+                    </video>
+                    <img id="arrow1Escena6" src="../img/flecha-amarilla.png" class="" alt="">
+                </div>
+                
+                <!-- escena 7 -->
+                <div class="carousel-item escena7">
+                    <img src="../recursos/escena2/comedor-fondo.png" class="d-block w-100" alt="...">
+                    <img src="../recursos/escena2/comedor-plantas-.png" class="escena2Plantas" alt="...">
+                    <img src="../recursos/escena2/comedor-jarron.png" class="d-block w-100 escenas-imgs" alt="...">
+                    <img id="familiacaminan" src="../recursos/escena2/animacionfamilia0.5.gif" class="d-block w-100 escenas-imgs d-none" alt="...">
+                    <img src="../recursos/escena2/comedor-sillas.png" class="d-block w-100 escenas-imgs" alt="...">
+                    <img id="familiaQuietos" src="../recursos/escena7/familia-quietos-img.png" class="d-block w-100 escenas-imgs d-none" alt="...">
+                    <img id="familiaHablan" src="../recursos/escena7/anaYSofiaLipsync.gif" class="d-block w-100 escenas-imgs d-none" alt="...">
+                    <img src="../recursos/escena7/comedor-comedor.png" class="d-block w-100 escenas-imgs" alt="...">
+                    <img src="../recursos/escena2/lamparas.png" class="escena2Lamparas lampara1" alt="...">
+                    <img src="../recursos/escena2/lamparas.png" class="escena2Lamparas lampara2" alt="...">
+                    <img src="../recursos/escena2/lamparas.png" class="escena2Lamparas lampara3" alt="...">
+                    <img src="../recursos/escena2/humos.gif" class="d-block w-100 escenas-imgs humos" alt="...">
+                    <img id="contornoEscena7" src="../recursos/escena2/comedor-contorno-verde.png" class="d-block w-100 escenas-imgs d-none" alt="...">
+                    <div id="divContornoEscena7"></div>
+                    <img id="ojosEscena7" src="../recursos/escena7/anaYSofiaOjosCerrados.png" class="d-block w-100 escenas-imgs d-none" alt="...">
+                    
+                    <img id="narracionEscena7" src="../recursos/escena7/narracion.gif" class="d-block w-100 escenas-imgs d-none" alt="...">
+                    
+                    <img id="imgNarracionEscena7" src="../recursos/escena7/imgNarracion.png" class="d-block w-100 escenas-imgs d-none" alt="...">
+                    
+                    <img id="arrow1Escena7" src="../img/flecha-rosa.png" alt="">
+                    <img id="arrow2Escena7" src="../img/flecha-rosa.png" class="d-none" alt="">
+                    <audio id="audioEscena7">
+                        <source src="../recursos/escena7/audioEscena7.mp3" type="audio/mp3">
+                        Tu navegador no soporta el tag de audio.
+                    </audio>
+                </div>
+
+                <!-- siguiente capitulo -->
+                <div class="carousel-item">
+                    <div class="cap2 text-center">
+                        <a href="./cap3.html" class="img-cap"><img src="..//img/capitulo3.png" alt="" class=" img-cap2"></a>
+                        <a href="./cap3.html" class="btn-cap">Capítulo 3</a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <div id="controladores-comic" class="controladores-comic">
+            <div class="controladores-btns h-100 d-flex flex-column justify-content-around">
+                <a href="../index.html" class="d-flex "><img class="img-btns m-auto" src="../img/img-menu.png" alt=""></a>
+                <div class="music-container">
+                    <audio id="music" src="../recursos/music.mp3" preload="auto" loop=""></audio>
+                    <img id="playMusicBtn" class="img-btns d-flex m-auto" src="../img/img-sonido.png"
+                        alt="Reproducir/Pausar">
+                    <input type="range" id="musicSlider" min="0" max="1" step="0.1" value="0.1">
+                </div>
+                <div class="voices-container">
+                    <img id="playVoicesBtn" class="img-btns d-flex m-auto" src="../img/img-dialogos.png" alt="">
+                    <input type="range" id="voicesSlider" min="0" max="1" step="0.1" value="1">
+                </div>
+
+                <div>
+                    <!-- Button trigger modal -->
+                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <img src="../img/img-info.png" class="img-btns m-auto" alt="">
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="modalContainer">
+                                    <h1 class="text-center titulo">BIENVENIDO AL COMIC INTERACTIVO <br>EL SABOR DE LA
+                                        SALUD
+                                    </h1>
+                                    <br>
+                                    <p class="">¡Bienvenidos a esta emocionante historia en formato de cómic! Acompaña a
+                                        la
+                                        familia Rodríguez en su viaje de descubrimiento y transformación mientras
+                                        luchan por una vida más saludable.</p>
+                                    <br> <br>
+                                    <h3 class="text-center">Instrucciones</h3> <br>
+                                    <p>Para interactuar con el contenido haz click donde indican las flechas a medida
+                                        que
+                                        salgan.</p>
+                                    <p>Solo dar un click, evitar dar doble click</p>
+                                    <p>No pasar a la siguiente escena antes de que la animación se lo indique.</p>
+                                    <p>Para volver a ver cada una de las escenas recargar la página y avanzar hasta la
+                                        escena correspondiente.</p> <br> <br>
+                                    <h3 class="text-center">Al iniciar el comic te encontrarás con un menu en la parte
+                                        derecha.</h3> <br>
+                                    <p><img class="introduccion-iconos" src="../img/img-menu.png" alt="">Con este botón
+                                        podras volver al menu de
+                                        capítulos.</p>
+                                    <p><img class="introduccion-iconos" src="../img/img-sonido.png" alt="">Al oprimir
+                                        este
+                                        boton podrás pausar o reproducir la musica de ambiente, debajo del mismo
+                                        encuentras
+                                        un
+                                        controlador de sonido. </p>
+                                    <p><img class="introduccion-iconos" src="../img/img-dialogos.png" alt="">Al oprimir
+                                        este
+                                        boton podrás activar o desactivar el sonido de la narración y los dialogos,
+                                        debajo
+                                        del mismo
+                                        encuentras un controlador de sonido.
+                                    </p>
+                                    <p><img class="introduccion-iconos" src="../img/img-info.png" alt="">Con este botón
+                                        podrás volver a ver las instrucciones en cualquier momento.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+<script src="../js/cap2.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+
+</html>
